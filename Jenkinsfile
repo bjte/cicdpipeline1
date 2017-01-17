@@ -4,5 +4,5 @@ node {
         openshiftBuild(namespace: 'insultapp', buildConfig: 'insults', showBuildLogs: 'true')
     stage 'deploy'
         echo 'Hello World (deploy)'
-        openshiftDeployment(namespace: 'insultapp', deploymentConfig: 'insults')
+        openshiftDeploy(namespace: 'insultapp', deploymentConfig: 'insults')
 }
